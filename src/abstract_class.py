@@ -1,27 +1,23 @@
 from abc import ABC, abstractmethod
 
+
 class AbstractApi(ABC):
-    '''Абстрактный класс для работы с API сервиса с вакансиями'''
+    """Абстрактный класс для работы с API сервиса с вакансиями"""
 
     @abstractmethod
-    def __init__(self, file_worker):
-        self.file_worker = file_worker
+    def __init__(self, url):
+        self.url = url
 
 
 class AbstractMethods(ABC):
     """Абстрактный класс"""
 
     @abstractmethod
-    def add_vacancy(self, *args):
-        '''Метод, для добавления вакансий'''
-        pass
-
-    @abstractmethod
     def get_data(self, *args):
-        '''Метод, для получения данных'''
+        """Метод, для получения данных"""
         pass
 
     @abstractmethod
     def delete_vacancy(self):
-        '''Метод, для удаления вакансий'''
+        """Метод, для удаления вакансий"""
         pass
