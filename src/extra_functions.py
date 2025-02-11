@@ -57,6 +57,6 @@ def sorting(N):
     return sort_vac
 
 
-if __name__ == "__main__":
-    xxx1 = information_output("..\\tests\\test_vacancies.json")
-    xxx2 = sorting(1)
+# if __name__ == "__main__":
+#     xxx1 = information_output("..\\tests\\test_vacancies.json")
+#     xxx2 = sorting(1)

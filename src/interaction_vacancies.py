@@ -1,21 +1,23 @@
 class WorkVacancies:
     """Класс для работы с вакансиями"""
 
-    name: str  # название вакансии
-    area: str  # ссылка на вакансию
-    salary: float  # зарплата
-    snippet: str  # краткое описание или требования
+    # name: str  # название вакансии
+    # area: str  # ссылка на вакансию
+    # salary: float  # зарплата
+    # snippet: str  # краткое описание или требования
 
-    def __init__(self, name, area, salary, snippet):
+    __slots__ = ("name", "area", "salary", "snippet")
+
+    def __init__(self, name: str, area: str, salary: dict, snippet: str):
         self.name = name
         self.area = area
-        self.salary = self.validate_salary(salary)
+        self.salary = self.__validate_salary(salary)
         self.snippet = snippet
 
     def __repr__(self):
         return f"Вакансия: {self.name}. Ссылка: {self.area}. Зарплата: {self.salary}. Описание: {self.snippet}.\n"
 
-    def validate_salary(self, salary):
+    def __validate_salary(self, salary: dict):
         """Валидирует данные о зарплате."""
         if not salary:
             return "Зарплата не указана"
@@ -47,8 +49,10 @@ class WorkVacancies:
 
 
 # if __name__ == "__main__":
-#     vacancy1 = WorkVacancies("Python разработчик", "https://example.com/job1", {"from": 150000, "to": 200000}, "Опыт работы от 3 лет")
-#     vacancy2 = WorkVacancies("Python разработчик", "https://example.com/job2", {"from": 100000, "to": 120000}, "Опыт работы от 2 лет")
+#     vacancy1 = WorkVacancies("Python разработчик", "https://example.com/job1", {"from": 150000, "to": 200000},
+#     "Опыт работы от 3 лет")
+#     vacancy2 = WorkVacancies("Python разработчик", "https://example.com/job2", {"from": 100000, "to": 120000},
+#     "Опыт работы от 2 лет")
 #
 #     print(vacancy1)
 #     print(vacancy2)

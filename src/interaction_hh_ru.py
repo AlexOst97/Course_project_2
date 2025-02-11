@@ -8,25 +8,35 @@ class HeadHunterAPI(AbstractApi):
 
     def __init__(self, url: str = "https://api.hh.ru/vacancies"):
         """Конструктор для инициализации объектов"""
-        self.url = url
-        self.headers = {"User-Agent": "HH-User-Agent"}
-        self.params = {"text": "", "page": 0, "per_page": 100}
-        self.vacancies = []
+        self.__url = url
+        self.__headers = {"User-Agent": "HH-User-Agent"}
+        self.__params = {"text": "", "page": 0, "per_page": 100}
+        self.__vacancies = []
         super().__init__(url)
 
-    def load_vacancies(self, keyword):
+    def url_status(self):
+        response = requests.get(self.__url)
+        status = response.status_code
+        if status == 200:
+            return "Успешный запрос"
+        else:
+            return "Неуспешный запрос"
+
+    def load_vacancies(self, keyword: str):
         """Метод, для записи вакансий"""
 
-        self.params["text"] = keyword
-        while self.params.get("page") != 1:
-            response = requests.get(self.url, headers=self.headers, params=self.params)
+        self.__params["text"] = keyword
+        while self.__params.get("page") != 1:
+            response = requests.get(self.__url, headers=self.__headers, params=self.__params)
             vacancies = response.json()["items"]
-            self.vacancies.extend(vacancies)
-            self.params["page"] += 1
-        return self.vacancies
+            self.__vacancies.extend(vacancies)
+            self.__params["page"] += 1
+        return self.__vacancies
 
 
 # if __name__ == "__main__":
-#     hh1 = HeadHunterAPI()
-#     hh2 = hh1.load_vacancies("Python")
+#     hh1 = HeadHunterAPI("https://api.hh.ru/vacancies")
+#     hh2 = hh1.url_status()
 #     print(hh2)
+#     hh3 = hh1.load_vacancies("Python")
+#     print(hh3)

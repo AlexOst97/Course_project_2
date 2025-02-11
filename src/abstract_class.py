@@ -6,7 +6,7 @@ class AbstractApi(ABC):
 
     @abstractmethod
     def __init__(self, url):
-        self.url = url
+        self.__url = url
 
 
 class AbstractMethods(ABC):

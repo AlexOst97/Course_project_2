@@ -52,8 +52,15 @@ def test_hh_api():
                 "trusted": True,
             },
             "snippet": {
-                "requirement": "Hard Skills. - <highlighttext>Python</highlighttext> Expertise: Proficient in <highlighttext>Python</highlighttext> programming, with a strong understanding of its libraries and frameworks such as Django...",
-                "responsibility": "Software Development: Design, develop, and maintain high-quality <highlighttext>Python</highlighttext> applications. - Code Review: Conduct thorough code reviews to ensure code quality...",
+                "requirement": "Hard Skills. - <highlighttext>Python</highlighttext> "
+                               "Expertise: Proficient in "
+                               "<highlighttext>Python</highlighttext> programming, with a strong "
+                               "understanding of its "
+                               "libraries and frameworks such as Django...",
+                "responsibility": "Software Development: Design, develop, and maintain high-quality "
+                                  "<highlighttext>Python</highlighttext> applications. - Code Review: "
+                                  "Conduct thorough "
+                                  "code reviews to ensure code quality...",
             },
             "contacts": None,
             "schedule": {"id": "fullDay", "name": "Полный день"},
@@ -91,14 +98,21 @@ def test_hh_api():
             "salary": None,
             "type": {"id": "direct", "name": "Рекламная"},
             "address": None,
-            "response_url": "https://yandex.ru/project/events/wo-analytics-0325?utm_source=headhunter&utm_medium=direct_response&utm_campaign=wo_analytics_0325",
+            "response_url": "https://yandex.ru/project/events/wo-analytics-0325?"
+                            "utm_source=headhunter&utm_medium=direct_response&utm_campaign="
+                            "wo_analytics_0325",
             "sort_point_distance": None,
             "published_at": "2025-02-05T12:49:01+0300",
             "created_at": "2025-02-05T12:49:01+0300",
             "archived": False,
             "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=116796595",
             "video_vacancy": {
-                "video_url": "https://storage.yandexcloud.net/hhdisk-video-vacancy-prod/78d63845-8d79-4e87-b787-d17edbd95f30_original.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJEGF2cq2Ivt4zBoWonIaIu%2F20250209%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250209T053754Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=426ac26f6dca75c32fba104de040ee61b7d49afa3d09e7b767347283c3ca08a0",
+                "video_url": "https://storage.yandexcloud.net/hhdisk-video-vacancy-prod/78d63845-8d79-"
+                             "4e87-b787-d17edbd95f30_original.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-"
+                             "Amz-Credential=YCAJEGF2cq2Ivt4zBoWonIaIu%2F20250209%2Fus-east-1%2Fs3%2"
+                             "Faws4_request&X-Amz-Date=20250209T053754Z&X-Amz-Expires=86400&X-Amz-"
+                             "SignedHeaders=host&X-Amz-Signature="
+                             "426ac26f6dca75c32fba104de040ee61b7d49afa3d09e7b767347283c3ca08a0",
                 "cover_picture": {
                     "resized_path": "https://img.hhcdn.ru/branding-pictures/3150337.jpeg",
                     "resized_width": 1182,
@@ -199,8 +213,11 @@ def test_functions():
                 "trusted": True,
             },
             "snippet": {
-                "requirement": "Пунктуальность, систематичность, ответственное отношение к дедлайнам. . Уверенное владения <highlighttext>Python</highlighttext> для ML (преимущественно nlp и cv). . Опыт реализации и применения моделей...",
-                "responsibility": "Реализация проектов из сфер CV, NLP, построение предиктивных моделей и других задач из сферы. Работа с подготовкой и аннотацией данных...",
+                "requirement": "Пунктуальность, систематичность, ответственное отношение к дедлайнам. . "
+                               "Уверенное владения <highlighttext>Python</highlighttext> для ML "
+                               "(преимущественно nlp и cv). . Опыт реализации и применения моделей...",
+                "responsibility": "Реализация проектов из сфер CV, NLP, построение предиктивных моделей "
+                                  "и других задач из сферы. Работа с подготовкой и аннотацией данных...",
             },
             "contacts": None,
             "schedule": {"id": "fullDay", "name": "Полный день"},
@@ -239,14 +256,20 @@ def test_functions():
             "salary": 0,
             "type": {"id": "direct", "name": "Рекламная"},
             "address": None,
-            "response_url": "https://yandex.ru/project/events/wo-analytics-0325?utm_source=headhunter&utm_medium=direct_response&utm_campaign=wo_analytics_0325",
+            "response_url": "https://yandex.ru/project/events/wo-analytics-0325?utm_source="
+                            "headhunter&utm_medium=direct_response&utm_campaign=wo_analytics_0325",
             "sort_point_distance": None,
             "published_at": "2025-02-05T12:49:01+0300",
             "created_at": "2025-02-05T12:49:01+0300",
             "archived": False,
             "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=116796595",
             "video_vacancy": {
-                "video_url": "https://storage.yandexcloud.net/hhdisk-video-vacancy-prod/78d63845-8d79-4e87-b787-d17edbd95f30_original.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJEGF2cq2Ivt4zBoWonIaIu%2F20250209%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250209T091836Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=076a679f943c8f8ac6e4afb23d37d931b79e522411ccee1dbd645f31cdf26575",
+                "video_url": "https://storage.yandexcloud.net/hhdisk-video-vacancy-prod/78d63845-8d79"
+                             "-4e87-b787-d17edbd95f30_original.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-"
+                             "Amz-Credential=YCAJEGF2cq2Ivt4zBoWonIaIu%2F20250209%2Fus-east-1%2Fs3%2"
+                             "Faws4_request&X-Amz-Date=20250209T091836Z&X-Amz-Expires=86400&X-Amz-"
+                             "SignedHeaders=host&X-Amz-Signature=076a679f943c8f8ac6e4afb23d37d931b79"
+                             "e522411ccee1dbd645f31cdf26575",
                 "cover_picture": {
                     "resized_path": "https://img.hhcdn.ru/branding-pictures/3150337.jpeg",
                     "resized_width": 1182,
@@ -336,8 +359,12 @@ def test_functions():
                 "trusted": True,
             },
             "snippet": {
-                "requirement": "Базовые знания фронтенд-технологий: HTML, CSS, JavaScript.Опыт работы на одном из серверных языков: PHP, Python.Понимание основ реляционных (MySQL, PostgreSQL) баз...",
-                "responsibility": "Участие в разработке программного обеспечения и административной части проекта. Участие в разработке программного обеспечения и административной части проекта. ",
+                "requirement": "Базовые знания фронтенд-технологий: HTML, CSS, JavaScript."
+                               "Опыт работы на одном из серверных языков: PHP, Python."
+                               "Понимание основ реляционных (MySQL, PostgreSQL) баз...",
+                "responsibility": "Участие в разработке программного обеспечения и "
+                                  "административной части проекта. Участие в разработке программного "
+                                  "обеспечения и административной части проекта. ",
             },
             "contacts": None,
             "schedule": {"id": "flexible", "name": "Гибкий график"},
